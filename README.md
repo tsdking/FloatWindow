@@ -1,9 +1,4 @@
-# FloatWindow 安卓任意界面悬浮窗
-[![](https://jitpack.io/v/yhaolpz/FloatWindow.svg)](https://jitpack.io/#yhaolpz/FloatWindow)
-
-
-![悬浮按钮图](https://raw.githubusercontent.com/yhaolpz/FixedFloatWindow/master/slide.gif)
-
+# FloatWindow 安卓悬浮窗
 特性：
 ===
 
@@ -22,28 +17,6 @@
 7.支持权限申请结果、位置等状态监听
 
 8.链式调用，简洁清爽
-
-
-集成：
-===
-
-第 1 步、在工程的 build.gradle 中添加：
-
-```
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
-```
-第 2 步、在应用的  build.gradle 中添加：
-
-```
-	dependencies {
-	        compile 'com.github.yhaolpz:FloatWindow:1.0.9'
-	}
-```
 
 使用：
 ===
@@ -163,80 +136,6 @@ setMoveStyle 方法可设置动画效果，只在 MoveType.slide 或 MoveType.ba
 ```
 
 创建第一个悬浮窗不需加 tag，之后再创建就需指定唯一 tag ，以此区分，方便进行后续操作。
-
-
-举个栗子
-===
-
-点击查看 : [示例代码](https://github.com/yhaolpz/FloatWindow/blob/master/sample/src/main/java/com/example/yhao/floatwindow/BaseApplication.java) 。
-
-最后：
---
-![悬浮按钮图](https://raw.githubusercontent.com/yhaolpz/FixedFloatWindow/master/pay.jpg)
-
-本人已尽量去兼容更多机型，但经济有限，如果你想帮助此库，提 Issues 标出当前版本不适配的机型即可，感谢~
-
-
-**更新日志**
---
-
-**v1.0.9**
-
- 修复拖动点击事件冲突
-
- 添加权限结果监听、位置等状态监听
-
- 支持贴边边距设置
-
-
-**v1.0.8**
-
- 适配 4.4~8.0 及各大国产机型
-
- 支持桌面显示
-
-
-**v1.0.7**
-
- 适配 Android 8.0
-
-
-**v1.0.6**
-
- 支持悬浮窗拖动及相关动效
-
- 位置及宽高可设置百分比值
-
- 更改相关类名及使用方法
-
-
-**v1.0.5**
-
- 修复未调用show显示悬浮窗bug
-
-
-**v1.0.4**
-
- 返回桌面将会自动隐藏控件，无需再监听应用退到后台等操作
-
- 新增 Activity 过滤器，可自由指定哪些界面显示，哪些界面不显示
-
- FixedFloatWindow 类改为 FFWindow
-
-
-**v1.0.3**
-
- 修复已知 bug
-
- 新增 dismiss 方法
-
- 新增其他方案，如:所有版本都申请权限
-
-
-
-
-
-
 
 
 
